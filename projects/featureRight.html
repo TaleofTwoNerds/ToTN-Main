@@ -1,0 +1,15 @@
+      <hr class="featurette-divider">
+      <?php echo"<div class=featurette id=".$id.">;"?>
+        <img class="featurette-image pull-right" src=<?php echo $img?> width="200" height="200" alt="">
+        <?php echo"<h2 class=featurette-heading>".$title."</h2>";?>
+        <p class="lead"><?php echo $info?></p><br/>
+        </div>
+        <?php $idNum = id."-1";?>
+        
+		<script>
+		//	var docID = <?php echo json_encode($docID)?>;
+		//	document.getElementById(docID).innerHTML = <?php echo json_encode($title)?>;
+			var text = <?php echo json_encode($sideBarText)?>;
+			var d1 = document.getElementById("sideBar");
+			d1.insertAdjacentHTML("beforeend", text); 
+		</script>

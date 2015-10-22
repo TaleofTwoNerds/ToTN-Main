@@ -1,0 +1,53 @@
+  <div class="container-fluid marketing">
+    <div class="container">
+      <div class="row-fluid">
+        <div data-spy="affix" class="span3 bs-docs-sidebar">
+        <ul id="sideBar" class="nav nav-list bs-docs-sidenav">
+        </ul>
+      </div>
+        <div class="offset3 span9">
+    <div class="page-header">
+      <h1><?php echo $pageTitle?></h1>
+    </div>
+      <div class="featurette">
+      Tale of Two Nerds is all about nerdiness and the things that I create strongly reflect those principles.
+      Such things like Mikecraft and Ultimate-Pong introduce a whole new mix of old iconic games with 
+      principles from the nerdiness which surrounds us today.
+      </div>
+<!-- Mikecraft --> 
+		<?php 
+			$id=3;
+			$title="Mikecraft";
+			$img="/res/img/gitHub/octocat/Octocat.png";
+			$info="Mikecraft is a two dimensional platform game in which the players are given a chance to 
+				take the role of William and fight against hordes of ball-shooting robots whom are aptly 
+				named Mike. The perils of William take place in an almost Mario-like world, but the look 
+				of two world has a look crafted just for it - or not.";
+			$docID= "1-".$id;
+			$sideBarText = "<li><a href=#".$id."><i class=icon-chevron-right></i>".$title."</a></li>";
+			include("./featureLeft.html");
+		?>
+<!-- Ultimate-Pong --> 
+		<?php 
+			$id=2;
+			$title="Ultimate-Pong";
+			$img="/res/img/gitHub/octocat/Octocat.png";
+			$info="Ultimate-Pong is an idea I came up with years ago when I was first beginning to program.
+				I thought it might be a good idea to take a simple game - pong - and take it to a whole new 
+				level. With Ultimate-Pong I added more multiplayer support, more color, and a whole new 
+				dimension for paddle gaming.";
+			$docID= "1-".$id;
+			$sideBarText = "<li><a href=#".$id."><i class=icon-chevron-right></i>".$title."</a></li>";
+			include("./featureRight.html");
+		?>
+<!-- Magic-Terminal -->
+		<?php 
+			$id=1;
+			$title="Magic-Terminal";
+			$img="/res/img/gitHub/octocat/Octocat.png";
+			$info="Magic-Terminal took weeks to develop...";
+			$sideBarText = "<li><a href=#".$id."><i class=icon-chevron-right></i>".$title."</a></li>";
+			include("./featureLeft.html");
+		?>
+    </div><!--/.fluid-container-->
+  </div><!--/Marketing-->
